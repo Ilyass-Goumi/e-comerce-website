@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services Trottinettes</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <header class="navbar">
+      <div class="logo">
+       
+        <h1>E-Trott</h1>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="index.html">Boutique</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- <div class="icons">
+        <i class="fa-solid fa-cart-shopping"></i> -->
+        <div class="cart-icon">
+  <i class="fa-solid fa-cart-shopping"></i>
+  <span id="cart-count">0</span>
+</div>
+
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+  <div class="global2">
+    
+    <header class="srv-header">
+    <h1 class="srv-title">Services de Location de Trottinettes</h1>
+    <p class="srv-sub">Choisissez le service qui vous convient</p>
+  </header>
+
+  <section class="srv-container">
+    <div class="srv-card">
+      <h2 class="srv-card-title">Location Standard</h2>
+      <p class="srv-card-desc">Location simple de trottinettes électriques pour vos déplacements rapides.</p>
+      <button class="srv-btn">En savoir plus</button>
+    </div>
+
+    <div class="srv-card">
+      <h2 class="srv-card-title">Location Journalière</h2>
+      <p class="srv-card-desc">Profitez d'une trottinette toute la journée avec un tarif avantageux.</p>
+      <button class="srv-btn">En savoir plus</button>
+    </div>
+
+    <div class="srv-card">
+      <h2 class="srv-card-title">Abonnement Mensuel</h2>
+      <p class="srv-card-desc">Un abonnement pour utiliser nos trottinettes tous les jours à petit prix.</p>
+      <button class="srv-btn">En savoir plus</button>
+    </div>
+
+    <div class="srv-card">
+      <h2 class="srv-card-title">Assistance & Réparation</h2>
+      <p class="srv-card-desc">Service technique disponible en cas de panne ou besoin d'entretien.</p>
+      <button class="srv-btn">En savoir plus</button>
+    </div>
+  </section>
+  </div>
+<script>
+      // Script simple pour actions futures
+// Fonction clic "En savoir plus"
+
+const buttons = document.querySelectorAll('.srv-btn');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    alert('Plus de détails seront bientôt disponibles.');
+  });
+});
+
+</script>
+  
+     <!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- LOGO & DESCRIPTION -->
+    <div class="footer-logo">
+  
+      <h3>E-Trott</h3>
+      <p>
+        Votre partenaire de mobilité urbaine — rapides, écologiques et modernes.
+        Redéfinissons ensemble vos trajets quotidiens.
+      </p>
+    </div>
+
+    <!-- LIENS UTILES -->
+    <div class="footer-links">
+      <h4>Liens rapides</h4>
+      <ul>
+       <li><a href="index.html">Accueil</a></li>
+        <li><a href="#collection">Boutique</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i> Casablanca, Maroc</p>
+      <p><i class="fa-solid fa-phone"></i> +212 6 45 78 90 21</p>
+      <p><i class="fa-solid fa-envelope"></i> contact@etrott.ma</p>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 E-Trott — Tous droits réservés | Design by Ilyass</p>
+  </div>
+</footer>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

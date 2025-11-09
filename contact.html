@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="navbar">
+      <div class="logo">
+        <!-- <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="Trottinette Logo" /> -->
+        <h1>E-Trott</h1>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#collection">Boutique</a>
+        <a href="services.html">Services</a>
+       
+        <a href="#">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+
+<div class="global3">
+          <section class="ct-container">
+        <h1 class="ct-title">Contactez-nous</h1>
+        <p class="ct-sub">Nous sommes disponibles pour répondre à toutes vos questions</p>
+
+        <div class="ct-box">
+            <input type="text" id="ct-name" class="ct-input" placeholder="Votre nom" />
+            <input type="email" id="ct-email" class="ct-input" placeholder="Votre email" />
+            <textarea id="ct-msg" class="ct-textarea" placeholder="Votre message"></textarea>
+
+            <button onclick="envoyerMessage()" class="ct-btn">Envoyer</button>
+            <a href="https://wa.me/" target="_blank" class="ct-whatsapp">💬 Contact WhatsApp</a>
+        </div>
+
+        <p id="ct-result" class="ct-result"></p>
+    </section>
+
+
+    <script>
+          function envoyerMessage() {
+    const name = document.getElementById('ct-name').value;
+    const email = document.getElementById('ct-email').value;
+    const msg = document.getElementById('ct-msg').value;
+    const result = document.getElementById('ct-result');
+
+    if (!name || !email || !msg) {
+        result.textContent = "Veuillez remplir tous les champs";
+        result.style.color = "red";
+        return;
+    }
+
+    result.textContent = "Message envoyé avec succès !";
+    result.style.color = "green";
+
+    // reset fields
+    document.getElementById('ct-name').value = "";
+    document.getElementById('ct-email').value = "";
+    document.getElementById('ct-msg').value = "";
+}
+
+    </script>
+</div>
+<!-- footer -->
+ <!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- LOGO & DESCRIPTION -->
+    <div class="footer-logo">
+  
+      <h3>E-Trott</h3>
+      <p>
+        Votre partenaire de mobilité urbaine — rapides, écologiques et modernes.
+        Redéfinissons ensemble vos trajets quotidiens.
+      </p>
+    </div>
+
+    <!-- LIENS UTILES -->
+    <div class="footer-links">
+      <h4>Liens rapides</h4>
+      <ul>
+   <li><a href="index.html">Accueil</a></li>
+        <li><a href="#collection">Boutique</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i> Casablanca, Maroc</p>
+      <p><i class="fa-solid fa-phone"></i> +212 6 45 78 90 21</p>
+      <p><i class="fa-solid fa-envelope"></i> contact@etrott.ma</p>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 E-Trott — Tous droits réservés | Design by Ilyass</p>
+  </div>
+</footer>
+   <script type="module" src="script.js"></script>
+</body>
+</html>
